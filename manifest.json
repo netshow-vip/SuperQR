@@ -1,0 +1,59 @@
+{
+
+  "manifest_version": 3,
+  "name": "SuperQR",
+  "version": "1.1",
+
+  "description": "Allows the user to make quick notes by clicking a button and entering text into the resulting popup. The notes are saved in storage. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#quicknote",
+  "icons": {
+    "48": "icons/Super_QR-48.png"
+  },
+
+  "permissions": [
+    "tabs"
+
+  ],
+
+  "host_permissions": [
+  
+    "*://*/*"
+  ],
+
+  "action": {
+    "default_icon": {
+     "32" : "icons/Super_QR-32.png"
+    },
+    "default_title": "Super QR",
+    "default_popup": "popup/SuperQR.html"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+    
+  },
+  
+  "content_scripts": [
+        {
+          "js": ["scripts/content.js"], 
+          "matches": ["<all_urls>"]
+        }
+   ],
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "*"
+      ],
+      "matches": [
+       
+      ]
+    }
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "netshow-vip@sohu.com"
+    }
+  }
+
+}
