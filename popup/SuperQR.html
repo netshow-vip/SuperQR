@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+	
+	
+    <link rel="stylesheet" href="SuperQR.css"/>
+    <script src="jquery.min.js"></script>
+    <script src="qrcode.min.js"></script>
+  </head>
+
+<body>
+  <div class="outer-wrapper">
+    <div class="new-note" style='text-align:center'>
+      
+      Current Website Address：<textarea id="currentAddress" class="currentAddress" style='height:54px'></textarea>
+         
+      <div class="note-container" style="width:134px;height:134px;margin:0 auto;padding-top:3px;margin-bottom:5px;text-align:center">
+          <div style="padding:4px;margin:0 auto;border:3px dashed rgb(202, 200, 200);border-radius:5px;" id="qrcode"  width=128 height=128>
+          </div>
+      </div>
+      <div style="padding:4px;margin:0 auto;border:1px dashed rgb(202, 200, 200);border-radius:5px;" id="div_area"  width=190 height=198>
+	  Custom QR code<br>
+      QR code Size：<input style='width:60px' type="text" value=400 id="bigsmall" />
+      <br>
+      QR code ForeColor:
+	  <select id="fc" style='width:118px'>
+		<option value="aqua" style='color:aqua'>aqua</option>
+		<option value="black" style='color:black'>black</option>
+		<option value="blue" style='color:blue'>blue</option>
+		<option value="fuchsia" style='color:fuchsia'>fuchsia</option>
+		<option value="gray" style='color:gray'>gray</option>
+		<option value="green" style='color:green'>green</option>
+		<option value="lime" style='color:lime'>lime</option>
+		<option value="maroon" style='color:maroon'>maroon</option>
+		<option value="navy" style='color:navy'>navy</option>
+		<option value="olive" style='color:olive'>olive</option>
+		<option value="purple" style='color:purple'>purple</option>
+		<option value="red" style='color:red'>red</option>
+		<option value="silver" style='color:silver'>silver</option>
+		<option value="teal" style='color:teal'>teal</option>
+		<option value="white" style='color:white'>white</option>
+		<option value="yellow" style='color:yellow'>yellow</option>
+	  </select>
+      <br><br>
+      QR code BackColor:
+	  <select id="bc" style='width:118px'>
+		<option value="navy" style='background-color:navy'>navy</option>
+		<option value="olive" style='background-color:olive'>olive</option>
+		<option value="purple" style='background-color:purple'>purple</option>
+		<option value="red" style='background-color:red'>red</option>
+		<option value="silver" style='background-color:silver'>silver</option>
+		<option value="teal" style='background-color:teal'>teal</option>
+		<option value="white" style='background-color:white'>white</option>
+		<option value="yellow" style='background-color:yellow'>yellow</option>
+		<option value="aqua" style='background-color:aqua'>aqua</option>
+		<option value="black" style='background-color:black'>black</option>
+		<option value="blue" style='background-color:blue'>blue</option>
+		<option value="fuchsia" style='background-color:fuchsia'>fuchsia</option>
+		<option value="gray" style='background-color:gray'>gray</option>
+		<option value="green" style='background-color:green'>green</option>
+		<option value="lime" style='background-color:lime'>lime</option>
+		<option value="maroon" style='background-color:maroon'>maroon</option>
+		
+		
+	  </select>
+      <br><br>
+      <button value="DIY " id="diy" class="save" >Generate</button>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    
+    <div class="note-container">
+ 
+    </div>
+  </div>
+
+  <script src="SuperQR.js"></script>
+
+
+
+</body>
+
+</html>
