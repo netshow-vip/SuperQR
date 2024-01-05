@@ -4,7 +4,7 @@
   "name": "SuperQR",
   "version": "1.1",
 
-  "description": "Allows the user to make quick notes by clicking a button and entering text into the resulting popup. The notes are saved in storage. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#quicknote",
+  "description": "Super QR generates QR codes independently, simple and fast, and can be generated immediately upon opening，supports 256 colors of any size!",
   "icons": {
     "48": "icons/Super_QR-48.png"
   },
